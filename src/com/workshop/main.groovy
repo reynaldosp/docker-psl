@@ -30,17 +30,16 @@ def main(script) {
        app_port,
        pr_num,
        dockerTool
- 
    )
  
    ansiColor('xterm') {
        stage('Pre Build - Details') {
-           sprebuild.validation(p)
-           sprebuild.details(p)
+           prebuild.validation(p)
+           prebuild.details(p)
        }
  
        stage('Pre Build - Checkout & Test') {
-           sprebuild.checkoutBuildTest(p)
+           prebuild.checkoutBuildTest(p)
        }
  
        //stage('Build & Push Image') {
