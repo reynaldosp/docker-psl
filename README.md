@@ -1,2 +1,2 @@
-# docker-psl
-Example of Jenkins Pipeline Shared Library
+# jenkins-psl
+Skeleton code structure
